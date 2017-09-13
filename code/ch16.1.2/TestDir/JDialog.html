@@ -1,0 +1,685 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=GB2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./JDialog.files/filelist.xml">
+<title>组件------- JDialog (对话框)</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>lp</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>lijuan</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>176</o:TotalTime>
+  <o:Created>2003-01-13T02:45:00Z</o:Created>
+  <o:LastSaved>2004-02-25T07:36:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>341</o:Words>
+  <o:Characters>1947</o:Characters>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2391</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:GrammarState>Clean</w:GrammarState>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+p.MSOBODYTEXTINDENT
+	{mso-para-margin-top: 0cm;
+	mso-para-margin-right: -8.44gd;
+	mso-para-margin-bottom: .0001pt;
+	mso-para-margin-left: 0cm;}
+li.MSOBODYTEXTINDENT
+	{mso-para-margin-top: 0cm;
+	mso-para-margin-right: -8.44gd;
+	mso-para-margin-bottom: .0001pt;
+	mso-para-margin-left: 0cm;}
+div.MSOBODYTEXTINDENT
+	{mso-para-margin-top: 0cm;
+	mso-para-margin-right: -8.44gd;
+	mso-para-margin-bottom: .0001pt;
+	mso-para-margin-left: 0cm;}
+ /* Font Definitions */
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:-88.6pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-char-indent-size:10.5pt;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal style='layout-grid-mode:char'><b><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>组件</span><span
+lang=EN-US>------- <span style='color:black'>JDialog</span><span
+style='color:#3366FF'> </span>(</span></b><b><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>对话框</span><span
+lang=EN-US>)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:26.25pt;layout-grid-mode:char'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>相信大家</span><span lang=EN-US>JDialog</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>都很熟悉吧，例如，当你从网上下载一些较大的资料的时候，网站一般会在这时弹出一个对话框，显示文件存储的位置等信息。当你关闭电脑的时候也会弹出一个消息框，等等这些都很好的体现了对话框的应用。</span></p>
+
+<p class=MsoNormal style='layout-grid-mode:char'><b><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>一．</span><span
+lang=EN-US>JDialog</span></b><b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的继承表：</span><span
+lang=EN-US><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;</span>Javax.Swing.*;</span></p>
+
+<p class=MsoNormal style='text-indent:31.5pt;layout-grid-mode:char'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>∟</span><span lang=EN-US>Jdialog</span></p>
+
+<p class=MsoNormal style='layout-grid-mode:char'><b><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>二．</span><span
+lang=EN-US>Jdialog</span></b><b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的构造函数</span></b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：</span><span lang=EN-US><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=749 style='width:561.45pt;
+ margin-left:14.15pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh: .5pt solid windowtext;
+ mso-border-insidev: .5pt solid windowtext'>
+ <tr style='height:20.25pt'>
+  <td width=305 valign=top style='width:228.45pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.25pt'>
+  <p class=MsoNormal><span lang=EN-US>Jdialog( )</span></p>
+  </td>
+  <td width=444 valign=top style='width:333.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:20.25pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>建立一个</span><span lang=EN-US>non-modal</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>的对话框</span><span lang=EN-US>,</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>没有</span><span lang=EN-US>title </span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>也不属于任何事窗组件</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.05pt'>
+  <td width=305 valign=top style='width:228.45pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:26.05pt'>
+  <p class=MsoNormal><span lang=EN-US>Jdialog(Dialog owner )</span></p>
+  </td>
+  <td width=444 valign=top style='width:333.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:26.05pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>建立一个</span><span lang=EN-US>Dialog</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>组件的对话框</span><span lang=EN-US>,</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>为</span><span lang=EN-US>non-modal</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>形式</span><span lang=EN-US>,</span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>但没有</span><span
+  lang=EN-US>title</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.15pt'>
+  <td width=305 valign=top style='width:228.45pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.15pt'>
+  <p class=MsoNormal><span lang=EN-US>Jdialog(Dialog owner,String title,Boolean
+  modal )</span></p>
+  </td>
+  <td width=444 valign=top style='width:333.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.15pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>建立一个属于</span><span lang=EN-US>Dialog</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>组件的对话框</span><span lang=EN-US>,</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>可决定</span><span lang=EN-US>modal</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>形式</span><span lang=EN-US>,</span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>有</span><span
+  lang=EN-US>title</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.45pt'>
+  <td width=305 valign=top style='width:228.45pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.45pt'>
+  <p class=MsoNormal><span lang=EN-US>Jdialog( Frame owner)</span></p>
+  </td>
+  <td width=444 valign=top style='width:333.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.45pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>建立一个属于</span><span lang=EN-US>Frame</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>组件的对话框</span><span lang=EN-US>,</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>为</span><span lang=EN-US>non-modal</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>形式</span><span lang=EN-US>, </span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>但没有</span><span
+  lang=EN-US>title</span></p>
+  </td>
+ </tr>
+ <tr style='height:18.0pt;mso-yfti-lastrow: yes'>
+  <td width=305 valign=top style='width:228.45pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:18.0pt'>
+  <p class=MsoNormal><span lang=EN-US>Jdialog( Frame owner, String
+  title,Boolean modal)</span></p>
+  </td>
+  <td width=444 valign=top style='width:333.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>建立一个属于</span><span lang=EN-US>Frame</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>组件的对话框</span><span lang=EN-US>, </span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>可决定</span><span lang=EN-US>modal</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>形式</span><span lang=EN-US>,</span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>有</span><span
+  lang=EN-US>title</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span></span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>注：上面的说的</span><span
+lang=EN-US>model</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>是一种对话框的操作模式，当</span><span lang=EN-US>model</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>为</span><span lang=EN-US>true</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>时，代表用户必须结束对话框才能返回到原来所属窗口。当</span><span
+lang=EN-US>model</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>为</span><span lang=EN-US>false</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>时，代表对话框与所属窗口可以互相切换，彼此之间在操作上没有顺序性。</span></p>
+
+<p class=MsoNormal style='layout-grid-mode:char'><b><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>三．</span><span
+lang=EN-US>JDialog </span></b><b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>在</span><span
+lang=EN-US>Jbuilder6.0</span></b><b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>环境下的属性面板</span></b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>：</span><span lang=EN-US><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 align=left style='margin-left:6.75pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-table-overlap:never;mso-table-lspace:9.0pt;mso-table-rspace:9.0pt;
+ mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+ mso-table-left:left;mso-table-top:.05pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh: .5pt solid windowtext;mso-border-insidev: .5pt solid windowtext'>
+ <tr style='height:23.35pt'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:23.35pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>name</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.35pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>设置结构面板中</span><span
+  lang=EN-US>JDialog</span><span style='font-family:宋体;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>的名称</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.25pt'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.25pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>constraints</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>对话框在界面中的位置</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.5pt'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.5pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>background</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>设置对话框的背景颜色</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.75pt'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.75pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>font</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.75pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>设置字体的大小，颜色</span></p>
+  </td>
+ </tr>
+ <tr style='height:23.2pt'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:23.2pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>forground</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:23.2pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>设置前景色</span></p>
+  </td>
+ </tr>
+ <tr style='height:22.65pt;mso-yfti-lastrow: yes'>
+  <td width=121 valign=top style='width:90.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:22.65pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span lang=EN-US>label</span></p>
+  </td>
+  <td width=227 valign=top style='width:170.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.65pt'>
+  <p class=MsoBodyTextIndent style='text-indent:0cm;mso-char-indent-count:0;
+  mso-char-indent-size:0cm;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>设置标签的内容</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='layout-grid-mode:char'><span lang=EN-US><br
+clear=all>
+</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>注：在</span><span lang=EN-US>Background</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（）中，相对应的</span><span lang=EN-US>Jbuilder</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>有两种方法来设置背景颜色。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;tab-stops:
+list 18.0pt;layout-grid-mode:char'><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'>1．</span><span lang=EN-US style='font-size:7.0pt;mso-fareast-font-family:
+"Times New Roman"'>&nbsp; </span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>直接在颜色列表框中选择单一的颜色，在其中有很多种颜色例如有红色，白色，黑色等</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;layout-grid-mode:char'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>单击要选的颜色即可</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;tab-stops:
+list 18.0pt left 342.0pt;layout-grid-mode:char'><span lang=EN-US
+style='mso-fareast-font-family:"Times New Roman"'>2．</span><span lang=EN-US
+style='font-size:7.0pt;mso-fareast-font-family:"Times New Roman"'>&nbsp; </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>可在用户颜色设置面板中对颜色进行混合选取，其中有</span><span lang=EN-US> RGB,HSB</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>两种设置。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;layout-grid-mode:char'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>1</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>），在</span><span
+lang=EN-US>RGB</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>中，它是对基本颜色的选取，有</span><span lang=EN-US>Red,Green,Blue</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>三种可选择的原子颜色，</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;layout-grid-mode:char'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>用户可利用原子颜色来配置自己喜欢的颜色。原子颜色的参数为</span><span lang=EN-US>0~255</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;layout-grid-mode:char'><span
+lang=EN-US><span style="mso-spacerun: yes">&nbsp;</span></span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>（</span><span lang=EN-US>2</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>），在</span><span
+lang=EN-US>HSB</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>中，它是对颜色灰暗程度的选择。用户可对灰暗度进行选择。灰暗度的参数为</span><span
+lang=EN-US>0~100</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>。</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;tab-stops:
+list 18.0pt;layout-grid-mode:char'><span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'>3．</span><span lang=EN-US style='font-size:7.0pt;mso-fareast-font-family:
+"Times New Roman"'>&nbsp; </span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>以上所说的颜色（包括颜色的混合）是相对于对话框及字体而言的。</span></p>
+
+<p class=MsoNormal style='margin-left:31.6pt;text-indent:-31.6pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>四．</span><span lang=EN-US>Jbuild6.0</span></b><b><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>环境下部分源代码</span></b><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>：</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>package
+wo;</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>import
+java.awt.*;<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>引入</span><span lang=EN-US>AWT</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>包</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>import
+java.awt.event.*;</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>import
+javax.swing.*;<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>引入</span><span lang=EN-US>Swing</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>包</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>import
+com.borland.jbcl.layout.*;</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>public
+class Frame1 extends JFrame {<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>创建一个</span><span lang=EN-US>Frame1</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>类，继承于</span><span lang=EN-US>Swing</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>组件中的</span><span lang=EN-US>JFrame</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>JPanel contentPane;</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>JPanel jPanel1 = new JPanel();<span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>创建</span><span lang=EN-US>JPanel</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>XYLayout xYLayout1 = new XYLayout();</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>public Frame1() {</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>enableEvents(AWTEvent.WINDOW_EVENT_MASK);</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>try {<span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>异常处理</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>jbInit();</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>catch(Exception e) {</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>e.printStackTrace();</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;</span>private void jbInit() throws Exception<span
+style="mso-spacerun: yes">&nbsp; </span>{<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>实例化过程</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>contentPane = (JPanel)
+this.getContentPane();</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>this.setSize(new
+Dimension(400, 300));<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>设置大小</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>this.setTitle(&quot;</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>对话框实例</span><span lang=EN-US>&quot;);<span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>设置标题</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>jPanel1.setLayout(xYLayout1);</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>contentPane.add(jPanel1,
+BorderLayout.CENTER);</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>protected void
+processWindowEvent(WindowEvent e) {<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>//</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>关闭对话框</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>super.processWindowEvent(e);</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>if (e.getID() ==
+WindowEvent.WINDOW_CLOSING) {</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.exit(0);</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US><span
+style="mso-spacerun: yes">&nbsp; </span>}</span></p>
+
+<p class=MsoNormal style='margin-left:31.5pt;text-indent:-31.5pt;mso-char-indent-count:
+-3.0;mso-char-indent-size:10.5pt;layout-grid-mode:char'><span lang=EN-US>}</span></p>
+
+</div>
+
+</body>
+
+</html>
