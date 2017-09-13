@@ -2,7 +2,7 @@
 
 Java IDE开发工具除了Eclipse当然还有很多，其中被广泛认可还有IntelliJ IDEA和NetBeans，令人惊奇的是它们都源自捷克人之手。
 
-### 2.3.1 IntelliJ IDEA {#intellij-idea}
+### 2.3.1 IntelliJ IDEA
 
 虽然IntelliJ IDEA市场份额不如Eclipse，但是被很多Java专家认为是最优秀的Java IDE卡发工具。IntelliJ IDEA是Jetbrains公司（www.jetbrains.com）研发的一款Java IDE开发工具，Jetbrains是一家捷克公司，该公司开发的很多工具都好评如潮，如图2-25所示Jetbrains开发的工具，这些工具可以编写C/C++、C#、DSL、Go、Groovy、Java、JavaScript、Kotlin、Objective-C、PHP、Python、Ruby、Scala、SQL和Swift语言。
 
@@ -18,7 +18,7 @@ IntelliJ IDEA下载地址是https://www.jetbrains.com/idea/download/，如图2-2
 
 IntelliJ IDEA工具使用起来比较复杂，而且用户群少，因此IntelliJ IDEA具体使用细节，本书不再介绍。
 
-### 2.3.2 NetBeans IDE {#netbeans-ide}
+### 2.3.2 NetBeans IDE
 
 NetBeans是一个始于捷克布拉格查理大学的一个学生项目（Xelfi计划），Xelfi计划延伸发展成为NetBeans IDE工具，1999年被Sun公司收购，后来随着Oracle公司收购Sun公司NetBeans IDE成为了Oracle工具产品。
 
@@ -30,7 +30,7 @@ NetBeans是一个始于捷克布拉格查理大学的一个学生项目（Xelfi�
 
 NetBeans IDE工具用户群比较少，因此NetBeans IDE具体使用细节，本书不再介绍。
 
-### 2.3.3 文本编辑工具 {#-0}
+### 2.3.3 文本编辑工具
 
 IDE开发工具提供了强大开发能力，提供了语法提示功能，但对于学习Java的学员而言语法提示并不是件好事，笔者建议文本编辑工具+JDK学习。开发过程就使用文本编辑工具编写Java源程序，然后使用JDK提供的javac指令编译Java源程序，再使用JDK和JRE提供的java指令运行。
 

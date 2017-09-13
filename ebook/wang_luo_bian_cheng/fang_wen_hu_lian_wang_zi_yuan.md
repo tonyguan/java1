@@ -279,7 +279,7 @@ public class HelloWorld {
 
 代码第⑥行～第⑧行是将请求参数发送给服务器，代码第⑥行中conn.getOutputStream()是打开输出流，new DataOutputStream(conn.getOutputStream())是创建基于数据输出流。代码第⑦行dStream.writeBytes(paramString)是向输出流中写入数据，第⑧行dStream.close()是关闭流，并将数据写入到服务器端。
 
-### 13.3.6 实例：Downloader {#downloader}
+### 13.3.6 实例：Downloader
 
 为了进一步熟悉URL类，这一节介绍一个下载程序Downloader。Downloader.java代码如下：
 

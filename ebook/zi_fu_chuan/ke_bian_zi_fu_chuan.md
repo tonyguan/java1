@@ -50,7 +50,7 @@ System.out.println("字符串缓冲区容量：" + sbuilder3.capacity());
     字符串缓冲区容量：34
     
 
-### 9.4.2 字符串追加 {#-0}
+### 9.4.2 字符串追加
 
 StringBuilder在提供了很多修改字符串缓冲区的方法，追加、插入、删除和替换等，这一节先介绍字符串追加方法。字符串追加方法是append，append有很多重载方法，可以追加任何类型数据，它的返回值还是StringBuilder。StringBuffer的追加法与StringBuffer完全一样，这里不再赘述。
 
@@ -87,7 +87,7 @@ System.out.println(sbuilder3);
 
 代码第④行连续追加了布尔值、转义符和空对象，需要注意的是布尔值false转换为false字符串，空对象null也转换为&quot;null&quot;字符串。
 
-### 9.4.3 字符串插入、删除和替换 {#-1}
+### 9.4.3 字符串插入、删除和替换
 
 StringBuilder中实现插入、删除和替换等操作的常用方法说明如下：
 

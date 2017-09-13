@@ -1,8 +1,8 @@
-## 2.2 Eclipse开发工具 {#eclipse}
+## 2.2 Eclipse开发工具
 
 Eclipse是著名的跨平台IDE工具，最初Eclipse是IBM支持开发的免费Java开发工具，2001年11月贡献给开源社区，现在它由非营利软件供应商联盟Eclipse基金会管理。Eclipse的本身也是一个框架平台，它有着丰富的插件，例如C++、Python、PHP等开发其他语言的插件。另外，Eclipse是绿色软件不需要写注册表，卸载非常方便。
 
-### 2.2.1 Eclipse下载和安装 {#eclipse-0}
+### 2.2.1 Eclipse下载和安装
 
 本书采用Eclipse 4.6[^5]版本作为IDE工具，Eclipse 4.6下载地址是http://www.eclipse.org/downloads/，如图2-10所示是Windows系统的下载Eclipse下载页面，单击“DOWNLOAD 64 bit”按钮页面会跳转到，如图2-11所示的选择下载镜像地址页面，单击Select Another Mirror连接可以改变下载镜像地址，然后单击DOWNLOAD按钮开始下载。
 
@@ -72,7 +72,7 @@ Eclipse界面默认是英文，对于一些初学者英语界面使用起来还�
 
 图2-22 安装简体中文语言包后Eclipse
 
-### 2.2.3 Eclipse界面 {#eclipse-1}
+### 2.2.3 Eclipse界面
 
 关闭Eclipse的“欢迎”界面，并创建一个Java工程后（如何创建Java工程将在第3章介绍），可以看到如图2-23所示的主界面。该界面主要分成4个区域：
 
@@ -96,7 +96,7 @@ Eclipse界面默认是英文，对于一些初学者英语界面使用起来还�
 
 此外，Eclipse提供了丰富的菜单和工具栏，随着学习的深入本书会有重点地介绍，这里不再赘述。
 
-### 2.2.4 Windows系统中常用快捷键 {#windows}
+### 2.2.4 Windows系统中常用快捷键
 
 一个优秀的IDE开发工具应该提供丰富的快捷键，快捷键虽然不能完全替代鼠标操作，但有可以锦上添花。由于Eclipse工具提供很多快捷键，本书不打算介绍全部的快捷键，笔者总结了一些Eclipse工具在Windows系统常用的快捷键，如表2-1所示。
 

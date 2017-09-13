@@ -2,7 +2,7 @@
 
 跳转语句能够改变程序的执行顺序，可以实现程序的跳转。Java有4种跳转语句：break、continue、throw和return。本章重点介绍break和continue语句的使用。throw和return将后面章节介绍。
 
-### 7.3.1 break语句 {#break}
+### 7.3.1 break语句
 
 break语句可用于上一节介绍的while、repeat-while和for循环结构，它的作用是强行退出循环体，不再执行循环体中剩余的语句。
 
@@ -88,7 +88,7 @@ System.out.println("Game Over!");
     
 比较两种运行结果，就会发现给break添加标签的意义，添加标签对于多层嵌套循环是很有必要的，适当使用可以提高程序的执行效率。
 
-### 7.3.2 continue语句 {#continue}
+### 7.3.2 continue语句
 
 continue语句用来结束本次循环，跳过循环体中尚未执行的语句，接着进行终止条件的判断，以决定是否继续循环。对于for语句，在进行终止条件的判断前，还要先执行迭代语句。
 

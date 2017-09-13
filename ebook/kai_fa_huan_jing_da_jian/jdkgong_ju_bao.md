@@ -1,8 +1,8 @@
-## 2.1 JDK工具包 {#jdk}
+## 2.1 JDK工具包
 
 JDK工具包是最基础的Java开发工具，很多Java IDE工具，如：Eclipse、IntelliJ IDEA和NetBeans等都依赖于JDK。也有一些人使用“JDK+文本编辑工具”编写Java程序。
 
-### 2.1.1 JDK下载和安装 {#jdk-0}
+### 2.1.1 JDK下载和安装
 
 截止本书编写完成为止，Oracle公司对外发布的最新JDK 8。图2-1所示是JDK 8下载界面，它的下载地址是http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html。其中有很多版本，支持的操作系统有Linux、Mac OS X<sup><sup id="596144984728568-footnote-ref-3"><a href="#596144984728568-footnote-3">[3]</a></sup></sup>、Solaris<sup><sup id="596144984728568-footnote-ref-4"><a href="#596144984728568-footnote-4">[4]</a></sup></sup>和Windows。注意选择对应的操作系统，以及32位还是64位安装的文件。
 
