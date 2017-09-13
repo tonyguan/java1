@@ -13,3 +13,8 @@ http://www.zhijieketang.com/classroom/6/courses
 
 ### 开始阅读
 [目录](./ebook/SUMMARY.md)
+
+
+### 与本书免费版对应的还有一个收费版本：
+[百度阅读](https://yuedu.baidu.com/ebook/7c1499987e192279168884868762caaedd33ba00)
+[图灵社区](http://www.ituring.com.cn/book/2480)
