@@ -2,11 +2,11 @@
 
 如果我的图书能够给您带来帮助，希望您能慷慨捐助，捐助方法可以通过手机扫描下面的二维码实现。
 
-![微信支付](/assets/weixin.jpg)
+![微信支付](assets/weixin.jpg)
 微信支付
 
 
-![支付宝支付](/assets/zhifubao.jpg)
+![支付宝支付](assets/zhifubao.jpg)
 
 支付宝支付
 
