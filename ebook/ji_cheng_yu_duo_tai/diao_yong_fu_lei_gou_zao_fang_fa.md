@@ -4,7 +4,7 @@
 
 下面看一个示例，现有父类Person和子类Student，它们类图如图12-4所示。
 
-![12-4](../assets/12-4.jpg)
+![12-4](.../assets/12-4.jpg)
 
 图12-4　Person和Student类图
 

@@ -2,7 +2,7 @@
 
 异常封装成为类Exception，此外，还有Throwable和Error类，异常类继承层次如图14-1所示。
 
-![14-1](../assets/14-1.jpg)
+![14-1](.../assets/14-1.jpg)
 
 图14-1　Java异常类继承层次
 

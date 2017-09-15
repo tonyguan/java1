@@ -23,6 +23,6 @@ name = new String("Hello World");
 ```
 代码中String(&quot;Hello World&quot;)表达式就是调用String的构造方法。初始化完成之后如图11-1所示。
 
-![11-1](../assets/11-1.jpg)
+![11-1](.../assets/11-1.jpg)
 
 图11-1　对象实例化

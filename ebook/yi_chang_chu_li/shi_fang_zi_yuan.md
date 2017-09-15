@@ -26,7 +26,7 @@ try{
 
 无论try正常结束还是catch异常结束都会执行finally代码块，如同14-2所示。
 
-![](/assets/14-2.jpg)
+![](./assets/14-2.jpg)
 
 图14-2　finally代码块流程
 

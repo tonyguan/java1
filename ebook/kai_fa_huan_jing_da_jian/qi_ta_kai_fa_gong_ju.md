@@ -6,13 +6,13 @@ Java IDE开发工具除了Eclipse当然还有很多，其中被广泛认可还�
 
 虽然IntelliJ IDEA市场份额不如Eclipse，但是被很多Java专家认为是最优秀的Java IDE卡发工具。IntelliJ IDEA是Jetbrains公司（www.jetbrains.com）研发的一款Java IDE开发工具，Jetbrains是一家捷克公司，该公司开发的很多工具都好评如潮，如图2-25所示Jetbrains开发的工具，这些工具可以编写C/C++、C#、DSL、Go、Groovy、Java、JavaScript、Kotlin、Objective-C、PHP、Python、Ruby、Scala、SQL和Swift语言。
 
-![](/assets/2-25.jpg)
+![](./assets/2-25.jpg)
 
 图2-25 Jetbrains公司工具
 
 IntelliJ IDEA下载地址是https://www.jetbrains.com/idea/download/，如图2-26所示页面可以见，IntelliJ IDEA有两个版本：Ultimate（旗舰版）和Community（社区版）。旗舰版是收费的，可以免费试用30天，如果超过30天，则需要购买软件许可(License key)。社区版是完全免费的，对于学习Java语言社区版已经足够了。在图2-26页面下载IntelliJ IDEA工具，完成之后需要安装了。
 
-![](/assets/2-26.jpg)
+![](./assets/2-26.jpg)
 
 图2-26 下载IntelliJ IDEA
 
@@ -24,7 +24,7 @@ NetBeans是一个始于捷克布拉格查理大学的一个学生项目（Xelfi�
 
 被Oracle收购后NetBeans IDE仍然是免费工具，下载网址https://netbeans.org/downloads/，打开页面如图2-27所示，可以NetBeans IDE支持的平台有Windows、Mac OS X和Linux等，除完全支持所有 Java 平台（Java SE、Java EE、Java ME 和 JavaFX）之外，还支持PHP、HTML5、JavaScript、Groovy和C/C++等语言。在图2-27页面选择适合自己的版本下载NetBeans IDE工具，完成之后需要安装了。
 
-![](/assets/2-27.jpg)
+![](./assets/2-27.jpg)
 
 图2-27 NetBeans IDE下载页面
 
@@ -57,29 +57,29 @@ Windows平台下的文本编辑工具有很多，常用如下：
 
 注意：编译时指定的Java源代码文件，要带有扩展名，指令类似于javac HelloWorld.java。而运行时不需要指定字节码文件的扩展名，指令类似于java HelloWorld。
 
-![](/assets/2-28.jpg)
+![](./assets/2-28.jpg)
 
 图2-28 EditPlus设置参数
 
-![](/assets/2-29.jpg)
+![](./assets/2-29.jpg)
 
 图2-29 添加编译菜单
 
-![](/assets/2-30.png)
+![](./assets/2-30.png)
 
 图2-30 添加执行菜单
 
 添加成功后会发现EditPlus的工具菜单中多出了两个子菜单，如图2-31所示，Java编译和Java执行。当打开一个源程序HelloWorld.java，可通过单击Java编译菜单（或Ctrl+1快捷键）编写HelloWorld.java，如图2-32所示，编译结果输出到EditPlus控制台；然后通过单击Java执行菜单（或Ctrl+2快捷键）执行编译完成的字节码文件HelloWorld.class，如图2-33所示，运行结果输出到EditPlus控制台。
 
-![](/assets/2-31.jpg)
+![](./assets/2-31.jpg)
 
 图2-31 添加后的工具菜单
 
-![](/assets/2-32.jpg)
+![](./assets/2-32.jpg)
 
 图2-32 执行Java编译菜单
 
-![](/assets/2-33.jpg)
+![](./assets/2-33.jpg)
 
 图2-33 执行Java运行菜单
 

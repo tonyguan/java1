@@ -9,20 +9,20 @@ Java诞生到现在已经有20多年了，但是Java仍然是非常热门的编�
 | 1 | 1 |  | Java | 14.639% | -6.320% |
 | 2 | 2 |  | C | 7.002% | -6.220% |
 | 3 | 3 |  | C++ | 4.751% | -1.950% |
-| 4 | 5 | ![change](../assets/change1.png) | Python | 3.548% | -0.240% |
-| 5 | 4 | ![change](../assets/change2.png) | C# | 3.457% | -1.020% |
-| 6 | 10 | ![change](../assets/change3.png) | Visual Basic .NET | 3.391% | 1.070% |
+| 4 | 5 | ![change](.../assets/change1.png) | Python | 3.548% | -0.240% |
+| 5 | 4 | ![change](.../assets/change2.png) | C# | 3.457% | -1.020% |
+| 6 | 10 | ![change](.../assets/change3.png) | Visual Basic .NET | 3.391% | 1.070% |
 | 7 | 7 |  | JavaScript | 3.071% | 0.730% |
-| 8 | 12 | ![change](../assets/change3.png) | Assembly language | 2.859% | 0.980% |
-| 9 | 6 | ![change](../assets/change2.png) | PHP | 2.693% | -0.300% |
-| 10 | 9 | ![change](../assets/change2.png) | Perl | 2.602% | 0.280% |
-| 11 | 8 | ![change](../assets/change2.png) | Ruby | 2.429% | 0.090% |
-| 12 | 13 | ![change](../assets/change1.png) | Visual Basic | 2.347% | 0.520% |
-| 13 | 15 | ![change](../assets/change1.png) | Swift | 2.274% | 0.680% |
-| 14 | 16 | ![change](../assets/change1.png) | R | 2.192% | 0.860% |
-| 15 | 14 | ![change](../assets/change2.png) | Objective-C | 2.101% | 0.500% |
-| 16 | 42 | ![change](../assets/change3.png) | Go | 2.080% | 1.830% |
-| 17 | 18 | ![change](../assets/change1.png) | MATLAB | 2.063% | 0.780% |
-| 18 | 11 | ![change](../assets/change4.png) | Delphi/Object Pascal | 2.038% | 0.030% |
+| 8 | 12 | ![change](.../assets/change3.png) | Assembly language | 2.859% | 0.980% |
+| 9 | 6 | ![change](.../assets/change2.png) | PHP | 2.693% | -0.300% |
+| 10 | 9 | ![change](.../assets/change2.png) | Perl | 2.602% | 0.280% |
+| 11 | 8 | ![change](.../assets/change2.png) | Ruby | 2.429% | 0.090% |
+| 12 | 13 | ![change](.../assets/change1.png) | Visual Basic | 2.347% | 0.520% |
+| 13 | 15 | ![change](.../assets/change1.png) | Swift | 2.274% | 0.680% |
+| 14 | 16 | ![change](.../assets/change1.png) | R | 2.192% | 0.860% |
+| 15 | 14 | ![change](.../assets/change2.png) | Objective-C | 2.101% | 0.500% |
+| 16 | 42 | ![change](.../assets/change3.png) | Go | 2.080% | 1.830% |
+| 17 | 18 | ![change](.../assets/change1.png) | MATLAB | 2.063% | 0.780% |
+| 18 | 11 | ![change](.../assets/change4.png) | Delphi/Object Pascal | 2.038% | 0.030% |
 | 19 | 19 |  | PL/SQL | 1.676% | 0.470% |
-| 20 | 22 | ![change](../assets/change1.png) | Scratch | 1.668% | 0.740% |
+| 20 | 22 | ![change](.../assets/change1.png) | Scratch | 1.668% | 0.740% |
