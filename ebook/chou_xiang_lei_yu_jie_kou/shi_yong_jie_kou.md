@@ -8,7 +8,7 @@
 
 其实13.1.1节抽象类Figure可以更加彻底，即Figure接口，接口中所有方法都是抽象的，而且接口可以有成员变量。将13.1.1节几何图形类改成接口后，类图如图13.2所示。
 
-![](./assets/13-2.jpg)
+![](../assets/13-2.jpg)
 
 图13-2　接口几何图形类图
 
@@ -111,7 +111,7 @@ public class HelloWorld {
 
 图13-3所示是多继承类图，其中的有两个接口InterfaceA和InterfaceB，从类图中可以见两个接口中都有一个相同的方法void methodB()。AB实现了这两个接口，继承了Object父类。
 
-![](./assets/13-3.jpg)
+![](../assets/13-3.jpg)
 
 图13-3　多继承类图
 
@@ -176,7 +176,7 @@ public class AB extends Object implements InterfaceA, InterfaceB {	①
 
 Java语言中允许接口和接口之间继承。由于接口中的方法都是抽象方法，所以继承之后也不需要做什么，因此接口之间的继承要比类之间的继承简单的多。如同4-4所示，其中InterfaceB继承了InterfaceA，在InterfaceB中还覆盖了InterfaceA中的methodB()方法。ABC是InterfaceB接口的实现类，从图可见ABC需要实现InterfaceA和InterfaceB接口中的所有方法。
 
-![](./assets/13-4.jpg)
+![](../assets/13-4.jpg)
 
 图13-4　接口继承类图
 

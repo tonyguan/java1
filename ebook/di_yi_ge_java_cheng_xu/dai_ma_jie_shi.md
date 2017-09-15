@@ -68,7 +68,7 @@ public class HelloWorld {
 
 编译HelloWorld.java源代码后，通过如图3-11所示，其中的java命令行后面的HelloWorld是要运行的类文件，Tony Hello World.是参数，多个参数用空格分割。
 
-![3-11](.../assets/3-11.jpeg)
+![3-11](..../assets/3-11.jpeg)
 
 图3-11 在命令行中运行程序
 

@@ -6,35 +6,35 @@ Eclipse是著名的跨平台IDE工具，最初Eclipse是IBM支持开发的免费
 
 本书采用Eclipse 4.6[^5]版本作为IDE工具，Eclipse 4.6下载地址是http://www.eclipse.org/downloads/，如图2-10所示是Windows系统的下载Eclipse下载页面，单击“DOWNLOAD 64 bit”按钮页面会跳转到，如图2-11所示的选择下载镜像地址页面，单击Select Another Mirror连接可以改变下载镜像地址，然后单击DOWNLOAD按钮开始下载。
 
-![](./assets/2-10.jpg)
+![](../assets/2-10.jpg)
 
 图2-10 Eclipse 4.6下载页面
 
-![](./assets/2-11.jpg)
+![](../assets/2-11.jpg)
 
 图2-11 选择下载镜像地址
 
 下载完成后的文件是eclipse-inst-win64.exe，事实上eclipse-inst-win64.exe是安装各种Eclipse版本客户端，双击eclipse-inst-win64.exe弹出如图2-12所示的界面，选择Eclipse IDE for Java Developers进入如图2-13所示的界面，在该界面中Installation Folder可以改变安装目录，选中create start menu entry可以添加快捷方式到开始菜单，选中create desktop shortcut可以在桌面创建快捷方式，设置完成后单击INSTALL按钮开始安装，安装完成后单击LAUNCH按钮启动Eclipse。
 
-![](./assets/2-12.jpg)
+![](../assets/2-12.jpg)
 
 图2-12安装各种Eclipse版本客户端
 
-![](./assets/2-13.jpg)
+![](../assets/2-13.jpg)
 
 图2-13 Eclipse安装
 
-![](./assets/2-14.jpg)
+![](../assets/2-14.jpg)
 
 图2-14 Eclipse安装完成
 
 在Eclipse启动过程中，会弹出如图2-15所示，选择工作空间（workspace）对话框，工作空间是用来保存工程的目录。默认情况下每次Eclipse启动时候都需要选择工作空间，如果你觉得每次启动时都选择工作空间比较麻烦，可以选中Use this as the default and to not ask again选项，设置工作空间默认目录。初次启动Eclipse成功后，会进入如图2-16所示的欢迎界面。
 
-![](./assets/2-15.jpg)
+![](../assets/2-15.jpg)
 
 图2-15 选择工作空间
 
-![](./assets/2-16.jpg)
+![](../assets/2-16.jpg)
 
 图2-16 Eclipse欢迎界面
 
@@ -42,33 +42,33 @@ Eclipse是著名的跨平台IDE工具，最初Eclipse是IBM支持开发的免费
 
 Eclipse界面默认是英文，对于一些初学者英语界面使用起来还是有一定困难的。Eclipse平台提供了一个语言包项目——Eclipse Babel Project（http://www.eclipse.org/babel/），Babel是一个插件，安装Babel插件可以通过离线或在线安装，Babel 插件下载地址是http://www.eclipse.org/babel/downloads.php，如图2-17所示，单击Zipped p2 repository for Neon超连接下载离线包，注意离线包所支持的Eclipse版本。笔者推荐在线安装，从图2-17所示页面中可见在线安装网址是http://download.eclipse.org/technology/babel/update-site/R0.14.1/neon。
 
-![](./assets/2-17.jpg)
+![](../assets/2-17.jpg)
 
 图2-17 下载Eclipse语言包
 
 安装插件过程如下，首先启动Eclipse，选择菜单Help→Install New Software弹出如图2-18所示的对话框。单击Add按钮弹出如图2-19所示对话框，在Location中输入插件在线地址http://download.eclipse.org/technology/babel/update-site/R0.14.1/neon，如图2-20所示。
 
-![](./assets/2-18.jpg)
+![](../assets/2-18.jpg)
 
 图2-18 安装插件
 
-![](./assets/2-19.jpg)
+![](../assets/2-19.jpg)
 
 图2-19插件地址
 
-![](./assets/2-20.jpg)
+![](../assets/2-20.jpg)
 
 图2-20 输入插件地址
 
 确定输入内容后单击OK按钮关闭对话，Eclipse通过刚刚输入的网址查找插件，如果能够找到插件，则出现如图2-21所示对话框，从中选择简体中文语言包。选择完成后单击Next按钮进行安装，安装过程需要从网上下载插件，这个过程需要等一段时间。
 
-![](./assets/2-21.jpg)
+![](../assets/2-21.jpg)
 
 图2-21 选择简体中文语言包
 
 安装简体中文语言包插件后重新启动Eclipse，界面如图2-22所示。
 
-![](./assets/2-22.jpg)
+![](../assets/2-22.jpg)
 
 图2-22 安装简体中文语言包后Eclipse
 
@@ -86,11 +86,11 @@ Eclipse界面默认是英文，对于一些初学者英语界面使用起来还�
 
 事实上，这4个区域视图都可以互换，只要拖曳视图标题到相应的区域。Eclipse视图标题如图2-24所示，标题的右端有两个按钮：最小化按钮和最大化按钮，单击可以实现视图的最小化和最大化显示。
 
-![2-23](.../assets/2-23.jpg)
+![2-23](..../assets/2-23.jpg)
 
 图2-23 Eclipse主界面
 
-![2-24](.../assets/2-24.jpg)
+![2-24](..../assets/2-24.jpg)
 
 图2-24 Eclipse视图
 

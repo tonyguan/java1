@@ -121,7 +121,7 @@ class Filter implements FilenameFilter { ③
 
 **注意 在Eclipse工具中运行的Java程序，那么当前目录在哪里呢？例如&quot;./TestDir&quot;表示当前目录下的TestDir子目录，那么应该在哪里创建TestDir目录呢？在Eclipse中当前目录就是工程的根目录，如同16-1所示，当前目录是Eclipse工程根目录，子目录TestDir位于工程根目录下。**
 
-![图16-1](./assets/16-1.jpg)
+![图16-1](../assets/16-1.jpg)
 
 图16-1　Eclipse中的当前目录
 

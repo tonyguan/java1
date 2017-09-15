@@ -12,7 +12,7 @@
 
 下面通过一个示例理解什么多态。如图12-5所示，父类Figure（几何图形）类有一个onDraw（绘图）方法，Figure（几何图形）它有两个子类Ellipse（椭圆形）和Triangle（三角形），Ellipse和Triangle覆盖onDraw方法。Ellipse和Triangle都有onDraw方法，但具体实现的方式不同。
 
-![](./assets/12-5.jpg)
+![](../assets/12-5.jpg)
 
 图12-5　几何图形类图
 
@@ -114,7 +114,7 @@ obj instanceof type
 
 为了介绍引用类型检查，先看一个示例，如同12-6所示的类图，展示了继承层次树，Person类是根类，Student是Person的直接子类，Worker是Person的直接子类。
 
-![](./assets/12-6.jpg)
+![](../assets/12-6.jpg)
 
 图12-6　继承关系类图
 

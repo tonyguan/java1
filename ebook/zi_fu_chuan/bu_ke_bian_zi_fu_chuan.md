@@ -92,7 +92,7 @@ System.out.printf("s8 == s9 : %b%n", s8 == s9);
 
 这是为什么？Java中的不可变字符串String常量，采用字符串池（String Pool）管理技术，字符串池是一种字符串驻留技术。采用字符串常量赋值时（见代码第③行），如图9-5所示，会字符串池中查找&quot;Hello&quot;字符串常量，如果已经存在把引用赋值给s9，否则创建&quot;Hello&quot;字符串对象，并放到池中。根据此原理，可以推定s10与s9是相同的引用，指向同一个对象。但此原理并不适用于new所创建的字符串对象，代码运行到第①行后，会创建&quot;Hello&quot;字符串对象，而它并没有放到字符串池中。代码第②行又创建了一个新的&quot;Hello&quot;字符串对象，s7和s8是不同的引用，指向不同的对象。
 
-![9-5](.../assets/9-5.jpg)
+![9-5](..../assets/9-5.jpg)
 
 图9-5　字符串池
 
@@ -222,7 +222,7 @@ System.out.println("从索引为5位置开始，从后往前搜索ing字符串�
     
 sourceStr字符串索引如图9-6所示。上述字符串查找方法比较类似，这里重点解释一下sourceStr.indexOf(&quot;ing&quot;, 5)和sourceStr.lastIndexOf(&quot;ing&quot;, 5)表达式。从图9-6可见ing字符串出现过两次，索引分别是14和24。sourceStr.indexOf(&quot;ing&quot;, 5)表达式从索引为5的字符（&quot; &quot;）开始从前往后搜索，结果是找到第一个ing（索引为14），返回值为14。sourceStr.lastIndexOf(&quot;ing&quot;, 5)表达式从索引为5的字符（&quot; &quot;）开始从后往前搜索，没有找到，返回值为-1。
 
-![9-6](.../assets/9-6.jpg)
+![9-6](..../assets/9-6.jpg)
 
 图9-6　sourceStr字符串索引
 

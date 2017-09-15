@@ -8,7 +8,7 @@ Java将数据的输入输出（I/O）操作当做“流”来处理，“流”�
 
 如同16-2所示，数据输入的数据源有多种形式，如文件、网络和键盘等，键盘是默认的标准输入设备。而数据输出的目的地也有多种形式，如文件、网络和控制台，控制台是默认的标准输出设备。
 
-![16-2](.../assets/16-2.jpg)
+![16-2](..../assets/16-2.jpg)
 
 图16-2　I/O流
 
@@ -33,7 +33,7 @@ Java将数据的输入输出（I/O）操作当做“流”来处理，“流”�
 | BufferedInputStream | 缓冲区输入流，它是FilterInputStream的子类 |
 | DataInputStream | 面向基本数据类型的输入流 |
 
-![16-3](.../assets/16-3.jpg)
+![16-3](..../assets/16-3.jpg)
 
 图16-3　字节输入流类继承层次
 
@@ -52,7 +52,7 @@ Java将数据的输入输出（I/O）操作当做“流”来处理，“流”�
 | BufferedOutputStream | 缓冲区输出流，它是FilterOutputStream的子类 |
 | DataOutputStream | 面向基本数据类型的输出流 |
 
-![16-4](.../assets/16-4.jpg)
+![16-4](..../assets/16-4.jpg)
 
 图16-4　字节输出流类继承层次
 
@@ -71,7 +71,7 @@ Java将数据的输入输出（I/O）操作当做“流”来处理，“流”�
 | BufferedReader | 缓冲区输入流，它是也是装饰器，它不是FilterReader的子类 |
 | InputStreamReader | 把字节流转换为字符流，它是也一个装饰器，是FileReader的父类 |
 
-![16-5](.../assets/16-5.jpg)
+![16-5](..../assets/16-5.jpg)
 
 图16-5　字符输入流类继承层次
 
@@ -90,6 +90,6 @@ Java将数据的输入输出（I/O）操作当做“流”来处理，“流”�
 | BufferedWriter | 缓冲区输出流，它是也是装饰器，它不是FilterReader的子类 |
 | OutputStreamWriter | 把字节流转换为字符流，它是也一个装饰器，是FileWriter的父类 |
 
-![16-6](.../assets/16-6.jpg)
+![16-6](..../assets/16-6.jpg)
 
 图16-6　字符输出流类继承层次
